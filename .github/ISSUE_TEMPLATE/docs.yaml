@@ -34,7 +34,7 @@ body:
       placeholder: Tell us what you see!
       render: shell
     validations:
-      required: true
+      required: false
   - type: textarea
     id: screenshots
     attributes:
