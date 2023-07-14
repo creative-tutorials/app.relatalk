@@ -26,6 +26,15 @@ body:
       render: shell
     validations:
       required: true
+   - type: textarea
+    id: info
+    attributes:
+      label: Addition information
+      description: Is there anything else we should know about this issue?
+      placeholder: null
+      render: shell
+    validations:
+      required: true
   - type: textarea
     id: screenshots
     attributes:
