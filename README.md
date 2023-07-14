@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="./public/logo.svg">
+
 # Relatalk
 
 **Open Source Alternative Social Media Platform**
@@ -29,7 +31,7 @@ Contributions are always welcome! Here's a few tips on how to get started.
 
 - **Issues**
 
-To get started, please we advise you take a look at the [issues tab](https://google.com), you'll be able to find open issues there that interest you. If you see an issue that interest you, create a new branch and submit a PR for review and approval.
+To get started, please we advise you take a look at the [issues tab](https://github.com/creative-tutorials/app.relatalk/issues), you'll be able to find open issues there that interest you. If you see an issue that interest you, create a new branch and submit a PR for review and approval.
 
 ## License
 
