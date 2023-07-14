@@ -1,0 +1,78 @@
+.profileWrapper {
+  margin-top: 4rem;
+  padding: 50px;
+  position: relative;
+}
+.profileFlex {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.profileInfo .standalone span {
+  font-weight: 600;
+  color: var(--ju-grey);
+}
+.profileInfo #username {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: var(--slight-ligter-white);
+  user-select: none;
+  cursor: pointer;
+}
+.follow_count {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.follow_count #following, #followers {
+  font-weight: 500;
+  color: var(--slight-ligter-white);
+  user-select: none;
+  cursor: pointer;
+}
+.follow_count #following:hover, #followers:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+.reset_cta {
+  margin-top: 0.9rem;
+}
+.reset_cta #resetFollowCount {
+  padding: 13px 25px;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  background-color: var(--tin-dark-light-grey);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.call_to_action #updateProfile {
+  padding: 13px 25px;
+  background-color: var(--secondary-button-bg);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.call_to_action #updateProfile:hover {
+  background-color: var(--secondary-button-bg-hover);
+}
+.userPfBx {
+  position: absolute;
+  top: 0;
+  padding: 20px;
+}
+.userPfBx .close {
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: ; */
+}
