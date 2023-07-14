@@ -23,6 +23,7 @@ body:
       label: Description
       description: A brief description of the issue and what went wrong
       placeholder: Tell us what you see!
+      render: shell
     validations:
       required: true
   - type: dropdown
@@ -42,7 +43,6 @@ body:
       label: Screenshots
       description: Please add screenshots if applicable
       placeholder: Screenshot
-      render: shell
   - type: checkboxes
     id: terms
     attributes:
