@@ -27,10 +27,10 @@ body:
     validations:
       required: true
   - type: textarea
-    id: what-happened
+    id: info
     attributes:
-      label: Description
-      description: A brief description of the issue and what went wrong
+      label: Additional information
+      description: Is there anything else we should know about this issue?
       placeholder: Tell us what you see!
       render: shell
     validations:
