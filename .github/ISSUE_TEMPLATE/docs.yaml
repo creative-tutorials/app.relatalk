@@ -1,7 +1,7 @@
 name: 📑 Docs
 description: File a bug report
 title: "[Docs]: <description>"
-labels: ["docs", "to fix"]
+labels: ["documentation", "to fix"]
 assignees:
   - octocat
 body:
