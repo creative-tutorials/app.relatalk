@@ -26,6 +26,15 @@ body:
       render: shell
     validations:
       required: true
+        - type: textarea
+    id: what-happened
+    attributes:
+      label: Description
+      description: A brief description of the issue and what went wrong
+      placeholder: Tell us what you see!
+      render: shell
+    validations:
+      required: true
   - type: textarea
     id: screenshots
     attributes:
