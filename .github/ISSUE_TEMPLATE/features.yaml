@@ -1,7 +1,7 @@
-name: 📑 Docs
-description: Fix broken docs, or add new features to it
-title: "[Docs]: <description>"
-labels: ["documentation", "to fix"]
+name: 🚀 Features
+description: Improvement or fixes to the app or docs
+title: "[Feature]: <description>"
+labels: ["enhancement", "features"]
 assignees:
   - octocat
 body:
@@ -21,8 +21,8 @@ body:
     id: what-happened
     attributes:
       label: Description
-      description: A brief description of the issue and what went wrong
-      placeholder: Tell us what you see!
+      description: A brief description of the feature you intend to add
+      placeholder: Describe the feature
       render: shell
     validations:
       required: true
@@ -30,11 +30,21 @@ body:
     id: info
     attributes:
       label: Additional information
-      description: Is there anything else we should know about this issue?
-      placeholder: Tell us what you see!
+      description: More information about the feature
+      placeholder: Enligten us
       render: shell
     validations:
       required: false
+  - type: dropdown
+    id: related
+    attributes:
+      label: Is the feature related to the following
+      description: More information about the feature
+      options:
+        - A bug fix
+        - New feature
+    validations:
+      required: true
   - type: textarea
     id: screenshots
     attributes:
