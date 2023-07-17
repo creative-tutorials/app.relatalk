@@ -24,20 +24,24 @@
   align-items: center;
   gap: 1rem;
 }
-.follow_count #following, #followers {
+.follow_count #following,
+#followers {
   font-weight: 500;
   color: var(--slight-ligter-white);
   user-select: none;
   cursor: pointer;
 }
-.follow_count #following:hover, #followers:hover {
+.follow_count #following:hover,
+#followers:hover {
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
-.reset_cta {
+.button_wrapper {
   margin-top: 0.9rem;
+  display: flex;
+  gap: 1rem;
 }
-.reset_cta #resetFollowCount {
+.button_wrapper #resetFollowCount {
   padding: 13px 25px;
   display: flex;
   align-items: center;
@@ -75,4 +79,88 @@
   display: flex;
   justify-content: flex-end;
   /* align-items: ; */
+}
+@media screen and (max-width: 764px) {
+  .button_wrapper {
+    margin-top: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .call_to_action #updateProfile {
+    width: 100%;
+  }
+  .button_wrapper #resetFollowCount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 643px) {
+  .profileInfo #username {
+    font-size: 2.2rem;
+  }
+  .follow_count #following,
+  #followers {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .profileInfo #username {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 553px) {
+  .profileInfo #username {
+    font-size: 1.8rem;
+  }
+  .profileImage img {
+    width: 170px;
+    height: 170px;
+  }
+}
+@media screen and (max-width: 501px) {
+  .profileInfo #username {
+    font-size: 1.5rem;
+  }
+  .profileImage img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 454px) {
+  .profileInfo #username {
+    font-size: 1.3rem;
+  }
+  .profileImage img {
+    width: 130px;
+    height: 130px;
+  }
+  .follow_count #following,
+  #followers {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 432px) {
+
+  .button_wrapper #resetFollowCount {
+    font-size: 0.8rem;
+  }
+  .call_to_action #updateProfile {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 422px) {
+  .profileInfo #username {
+    font-size: 1rem;
+  }
+  .button_wrapper #resetFollowCount {
+    font-size: 0.7rem;
+  }
+  .button_wrapper #resetFollowCount svg {
+    display: none;
+  }
+  .call_to_action #updateProfile {
+    font-size: 0.7rem;
+  }
 }

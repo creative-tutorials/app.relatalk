@@ -40,6 +40,7 @@ interface Posts {
 }
 
 const devapi = process.env.NEXT_PUBLIC_DEV_API;
+const prodAPI = process.env.NEXT_PUBLIC_PROD_API;
 const ProjectID: any = process.env.NEXT_PUBLIC_PROJECT_ID;
 const BucketID: any = process.env.NEXT_PUBLIC_BUCKET_ID;
 
@@ -187,7 +188,7 @@ export default function Home() {
     }
     setIsPosting(true);
     axios
-      .post(`${devapi}/create/post`, {
+      .post(`${prodAPI}/create/post`, {
         content: post.content,
         username: profile.fullName,
         profileImg: profile.profileImg,
@@ -243,7 +244,7 @@ export default function Home() {
   async function fetchPost() {
     setIsFetching({ ...isFetching, state: true, text: "Fetching post..." });
     axios
-      .get(`${devapi}/get/posts`)
+      .get(`${prodAPI}/get/posts`)
       .then(function (response) {
         setPosts(response.data);
         setIsFetching({ ...isFetching, state: false, text: "" });
@@ -345,5 +346,3 @@ export default function Home() {
     </>
   );
 }
-
-

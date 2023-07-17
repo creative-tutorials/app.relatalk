@@ -117,7 +117,7 @@ export default function Profile() {
                 <p id={pf.following}>0 following</p>
                 <p id={pf.followers}>0 followers</p>
               </div>
-              <div className={pf.reset_cta}>
+              <div className={pf.button_wrapper}>
                 <button id={pf.resetFollowCount}>
                   Reset Metrics
                   <svg
@@ -137,12 +137,12 @@ export default function Profile() {
                     <path d="M4.582 9.003a8 8 0 0 1 14.332-1.027"></path>
                   </svg>
                 </button>
+                <div className={pf.call_to_action}>
+                  <button id={pf.updateProfile} onClick={showProfileModal}>
+                    Update profile
+                  </button>
+                </div>
               </div>
-            </div>
-            <div className={pf.call_to_action}>
-              <button id={pf.updateProfile} onClick={showProfileModal}>
-                Update profile
-              </button>
             </div>
           </div>
         </div>

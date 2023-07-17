@@ -25,6 +25,7 @@ interface Post {
 export default function Post() {
   // get api url
   const devAPI = process.env.NEXT_PUBLIC_DEV_API;
+  const prodAPI = process.env.NEXT_PUBLIC_PROD_API
   // get params
   const router = useRouter();
   const { id } = router.query;
@@ -56,7 +57,7 @@ export default function Post() {
   const fetchPost = async (id: string | string[]) => {
     setIsFetching({ ...isFetching, state: true, text: "Fetching post..." });
     axios
-      .get(`${devAPI}/get/posts/${id}`)
+      .get(`${prodAPI}/get/posts/${id}`)
       .then(function (response) {
         setPost(response.data);
         setIsFetching({ ...isFetching, state: false, text: "" });
@@ -86,7 +87,7 @@ export default function Post() {
   };
   const incrementLikeCount = async () => {
     axios
-      .post(`${devAPI}/update/interactions/${id}`)
+      .post(`${prodAPI}/update/interactions/${id}`)
       .then(function (response) {
         console.log(response.data);
         setTimeout(() => {
@@ -127,7 +128,7 @@ export default function Post() {
     }
     const userID = user?.id;
     axios
-      .delete(`${devAPI}/delete/post/${userID}`)
+      .delete(`${prodAPI}/delete/post/${userID}`)
       .then(function (response) {
         console.log(response.data);
       })
